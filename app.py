@@ -53,7 +53,7 @@ def get_json():
     #     {"E2E MRP":"Pending","img":url+"/images/E2E.png","title":"E2E MRP","smallDesc":"sample Description", "version":"v1.0.1","description":"This is sample description"}
     #   ]}]
     ret =[ {"title":"2019-Q1","values":[
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 1","version":"10.10.2018","smallDesc":"This is a sample video","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 1","version":"10.10.2018","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
         {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 2","version":"10.10.2019","smallDesc":"This is a sample video","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
         {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 3","version":"10.10.2019","smallDesc":"This is a sample video","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
         {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 4","version":"10.10.2019","smallDesc":"This is a sample video","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]}
@@ -137,7 +137,7 @@ def send_img(path):
 @app.route('/get/data/bar',methods=['GET'])
 def send_bar_data():
     ret = {
-     "labels": ["Not Submitted", "Submitted & Approved", "Submitted & Not Approved", "Total"],
+     "labels": ["NS", "SA", "SNA", "Total"],
      "datasets": [{
        "label": '# of employees (82%)',
        "data": [83, 131, 977, 1191],
