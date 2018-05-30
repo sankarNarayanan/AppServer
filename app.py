@@ -31,7 +31,7 @@ CORS(app)
 
 @app.route('/', methods=["GET","POST"])
 def get_json():
-    url="https://4539d8c7.ngrok.io";
+    url="https://shielded-peak-82752.herokuapp.com";
 
     # ret =[ {"title":"Sales Enablement","values":[
     #     {"Elevate":"Pending","img":url+"/images/Elevate.png","title":"Elevate","smallDesc":"ELEVATE transforms how sales engages with the customer and manages their business by providing seamless access to sales content by leveraging M-AUTH technology and removing the need for a User ID/Password/RSA FOB. ELEVATE provides a simplified single account view for the Sales Rep where they can view basic account information including Service Requests Indicators, Opportunity Details, convert Sales Plays to Opportunities, as well as Account specific news.", "version":"v2.0.2","description":"ELEVATE transforms how sales engages with the customer and manages their business by providing seamless access to sales content by leveraging M-AUTH technology and removing the need for a User ID/Password/RSA FOB. ELEVATE provides a simplified single account view for the Sales Rep where they can view basic account information including Service Requests Indicators, Opportunity Details, convert Sales Plays to Opportunities, as well as Account specific news."},
