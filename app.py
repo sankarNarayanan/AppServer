@@ -52,9 +52,11 @@ def get_json():
     #     {"Burn Notification":"Pending","img":url+"/images/BN.png","title":"Burn Notification","smallDesc":"Burn Notification App send out notification status to the user’s smart watch.", "version":"v1.0.0","description":"Burn Notification App send out notification status to the user’s smart watch."},
     #     {"E2E MRP":"Pending","img":url+"/images/E2E.png","title":"E2E MRP","smallDesc":"sample Description", "version":"v1.0.1","description":"This is sample description"}
     #   ]}]
-    ret =[ {"title":"Video","values":[
-        {"desc_type":"video","img":url+"/images/DellEMC.png","title":"Change Point","version":"10.10.2018","smallDesc":"This is a sample video","url":"https://www.youtube.com/embed/i0GVsCGsg38"},
-        {"desc_type":"video","img":url+"/images/HaC.png","title":"Help a Customer","version":"10.10.2019","smallDesc":"This is a sample video","url":"https://cf-e2.streamablevideo.com/video/mp4/4jguk.mp4?token=1522220711-bDlDne%2BuKjOP%2FQVsosf9%2BhxC47FHNwsSvjMX%2Bw6P1Z4%3D"}
+    ret =[ {"title":"2019-Q1","values":[
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 1","version":"10.10.2018","smallDesc":"This is a sample video","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 2","version":"10.10.2019","smallDesc":"This is a sample video","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 3","version":"10.10.2019","smallDesc":"This is a sample video","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 4","version":"10.10.2019","smallDesc":"This is a sample video","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]}
         ]},
         {"title":"Audio","values":[
         {"desc_type":"audio","img":url+"/images/DellEMC.png","title":"DellEMC Mobile","version":"1.1.12","smallDesc":"This is a sample audio","url":"https://audio.clyp.it/of5issec.mp3?Expires=1522241732&Signature=j8PmHWUeuaQO25EEmAsbCnbYtqKMU4rF6Ml-Vckk2BQasxTOmXrtS5bqRn34kRrAxcZH7enFnstXRt~u2oC3Mdusnr~GBvcDCt-dSbfs1gecRa~wiNcIlQozWtBICezMqEbrXjBBt5jpIZOcL~RldS2b5tKYZ7SPGEY8tlsH-vE_&Key-Pair-Id=APKAJ4AMQB3XYIRCZ5PA"},
@@ -135,10 +137,10 @@ def send_img(path):
 @app.route('/get/data/bar',methods=['GET'])
 def send_bar_data():
     ret = {
-     "labels": ["Red", "Brown", "Blue", "Yellow", "Green", "Purple", "Orange"],
+     "labels": ["Not Submitted", "Submitted & Approved", "Submitted & Not Approved", "Total"],
      "datasets": [{
-       "label": '# of Votes',
-       "data": [11, 15, 22, 4, 6, 2, 3],
+       "label": '# of employees (82%)',
+       "data": [83, 131, 977, 1191],
        "backgroundColor": [
          'rgba(255, 99, 132, 0.2)',
          'rgba(244, 164, 96, 0.8)',
