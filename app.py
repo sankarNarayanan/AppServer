@@ -87,7 +87,7 @@ def get_json():
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
         {"desc_type":"graph","img":url+"/images/timesheet.png","title":"May - Week 3","version":"Poor : <50%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"May - Week 4","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"May - Week 4","version":"Poor : <50%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]}
         ]}
 
@@ -171,10 +171,10 @@ def send_img(path):
 @app.route('/get/data/bar',methods=['GET'])
 def send_bar_data():
     ret = {
-     "labels": ["NS", "SA", "SNA", "Total"],
+     "labels": ["NS", "SA", "SNA"],
      "datasets": [{
        "label": '# of employees (82%)',
-       "data": [83, 131, 977, 1191],
+       "data": [83, 131, 977],
        "backgroundColor": [
          'rgba(255, 99, 132, 0.2)',
          'rgba(244, 164, 96, 0.8)',
