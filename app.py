@@ -30,7 +30,7 @@ CORS(app)
 #   ]}]
 
 @app.route('/', methods=["GET","POST"])
-def get_json():
+def get_json_changepoint():
     url="https://shielded-peak-82752.herokuapp.com";
 
     # ret =[ {"title":"Sales Enablement","values":[
@@ -53,29 +53,29 @@ def get_json():
     #     {"E2E MRP":"Pending","img":url+"/images/E2E.png","title":"E2E MRP","smallDesc":"sample Description", "version":"v1.0.1","description":"This is sample description"}
     #   ]}]
     ret =[ {"title":"2019-Q1","values":[
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 1","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Feb - Week 1","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 2","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Feb - Week 2","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 3","version":"Poor : <50%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Feb - Week 3","version":"Poor : <50%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Feb - Week 4","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Feb - Week 4","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Mar - Week 1","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Mar - Week 1","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Mar - Week 2","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Mar - Week 2","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Mar - Week 3","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Mar - Week 3","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Mar - Week 4","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Mar - Week 4","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Apr - Week 1","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Apr - Week 1","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Apr - Week 2","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Apr - Week 2","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Apr - Week 3","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Apr - Week 3","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
-        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"Apr - Week 4","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+        {"desc_type":"graph","img":url+"/images/org.png","title":"Apr - Week 4","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
             "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]}
         ]},
 
@@ -142,6 +142,54 @@ def get_json():
     except Exception as e:
         ret = "error"
         return Response(json.dumps(ret),status=400,mimetype='application/json')
+
+
+
+@app.route('/getOrgData', methods=["GET","POST"])
+def get_json():
+    url="https://shielded-peak-82752.herokuapp.com";
+    ret =[ {"title":"Org Data","values":[
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES - DCS","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES EDME - BI & Analytics","version":"Poor : <50%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES EDME - Mobile","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES EDME - SAP ERP","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES EMDE - SAP Platform","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES - Enablement","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES - EIS","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES - Operations & Support","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+        {"desc_type":"graph","img":url+"/images/timesheet.png","title":"DES - PCS","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]}
+        ]}
+      ]
+    
+    try:
+        ##print("inside here");
+        if request.method=="GET":
+            # if 'id' in request.args:
+            #     ret['id'] = request.args['id']
+            # if 'name' in request.args:
+            #     ret['name'] = request.args['name']
+            print(ret);
+            print(request.headers);
+            # if request.headers['Content-Type'] == 'application/json':
+            #     print("headers work my lord")
+            return Response(json.dumps(ret), status=200, mimetype='application/json')
+    except Exception as e:
+        ret = "error"
+        return Response(json.dumps(ret),status=400,mimetype='application/json')
+
+
+
 
 @app.route('/images/<path:path>')
 def send_img(path):
