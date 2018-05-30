@@ -53,7 +53,7 @@ def get_json():
     #     {"E2E MRP":"Pending","img":url+"/images/E2E.png","title":"E2E MRP","smallDesc":"sample Description", "version":"v1.0.1","description":"This is sample description"}
     #   ]}]
     ret =[ {"title":"Video","values":[
-        {"desc_type":"video","img":url+"/images/DellEMC.png","title":"DellEMC Mobile","version":"10.10.2018","smallDesc":"This is a sample video","url":"https://cf-e2.streamablevideo.com/video/mp4/4jguk.mp4?token=1522220711-bDlDne%2BuKjOP%2FQVsosf9%2BhxC47FHNwsSvjMX%2Bw6P1Z4%3D"},
+        {"desc_type":"video","img":url+"/images/DellEMC.png","title":"DellEMC Mobile","version":"10.10.2018","smallDesc":"This is a sample video","url":"https://youtu.be/i0GVsCGsg38"},
         {"desc_type":"video","img":url+"/images/HaC.png","title":"Help a Customer","version":"10.10.2019","smallDesc":"This is a sample video","url":"https://cf-e2.streamablevideo.com/video/mp4/4jguk.mp4?token=1522220711-bDlDne%2BuKjOP%2FQVsosf9%2BhxC47FHNwsSvjMX%2Bw6P1Z4%3D"}
         ]},
         {"title":"Audio","values":[
