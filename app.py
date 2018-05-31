@@ -150,25 +150,25 @@ def get_json():
     url="https://shielded-peak-82752.herokuapp.com";
     ret =[ {"title":"Org Data","values":[
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES - DCS","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved","graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES EDME - BI & Analytics","version":"Poor : <50%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES EDME - Mobile","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES EDME - SAP ERP","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES EMDE - SAP Platform","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES - Enablement","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES - EIS","version":"Healthy : > 90%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES - Operations & Support","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]},
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]},
         {"desc_type":"graph","img":url+"/images/org.png","title":"DES - PCS","version":"Moderate: 60 - 80%","smallDesc":"NS - Not Submitted \n SA - Submitted & Approved, SNA - Submitted & Not Approved",
-            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}]}
+            "description": "NS - Not Submitted, \n SA - Submitted & Approved, SNA - Submitted & Not Approved", "graphs":[{"type":"bar","url":url+"/get/data/bar","title":"Timesheet Compliance"}, {"type":"pie","title":"Percentage","url":url+"/get/data/pie"}]}
         ]}
       ]
     
