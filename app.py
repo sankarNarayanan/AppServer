@@ -191,6 +191,42 @@ def get_json():
 
 
 
+@app.route('/getFaqData', methods=["GET","POST"])
+def get_json_faq():
+    url="https://shielded-peak-82752.herokuapp.com";
+    ret =[ {"title":"FAQ's","values":[
+            {"desc_type":"graph","img":url+"/images/org.png","title":"Why Changepoint?","version":"High",
+            "description": "Visibility at every level, Robust financial management, strong delivery & Flexible delivery models"},
+            {"desc_type":"graph","img":url+"/images/org.png","title":"How deos it help resource scheduling?",
+            "description": "Comprehensive views of staffing needs and workloads empower resource managers stay on top of organizational resource requirements, proactively take action to eliminate over- and under-utilization, reduce bench time, and look good doing it."},
+            {"desc_type":"graph","img":url+"/images/org.png","title":"How does it help Project Budget?","version":"High",
+            "description": "From forecast to execution, detailed budget capture provides early warnings if any projects are at risk for overages. Mature budgeting functions support multiple budgets within a project and the ability to forecast revenue and costs without going in the red."},
+            {"desc_type":"graph","img":url+"/images/org.png","title":"How does it help Opportunity Management?","version":"High",
+            "description": "Identifying opportunity comes down to two things: managing demand and forecasting financials. With a streamlined capture of contract data throughout the sales cycle, make it easier to identify opportunity in real-time to keep your services pipeline full."},
+            {"desc_type":"graph","img":url+"/images/org.png","title":"How does it help project and non project tracking?","version":"High",
+            "description": "Tracking time—both billable and non-billable—is essential to the success of your organization. With a simple and sophisticated time tracking system, make it easier for your teams to enter time to inform utilization metrics and timely invoicing."}
+        ]}
+      ]
+    
+    try:
+        ##print("inside here");
+        if request.method=="GET":
+            # if 'id' in request.args:
+            #     ret['id'] = request.args['id']
+            # if 'name' in request.args:
+            #     ret['name'] = request.args['name']
+            print(ret);
+            print(request.headers);
+            # if request.headers['Content-Type'] == 'application/json':
+            #     print("headers work my lord")
+            return Response(json.dumps(ret), status=200, mimetype='application/json')
+    except Exception as e:
+        ret = "error"
+        return Response(json.dumps(ret),status=400,mimetype='application/json')
+
+
+
+
 @app.route('/images/<path:path>')
 def send_img(path):
     return send_from_directory('AppIcons',path);
